@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(libvisual-0.4)
 BuildRequires:  gettext
 BuildRequires:  cvs
 BuildRequires:  python
+BuildRequires:  libtool
 
 %description
 A well-groomed and well-maintained collection of GStreamer plug-ins and elements, 
