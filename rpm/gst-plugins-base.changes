@@ -1,3 +1,6 @@
+* Fri May 16 2014 Andrew den Exter <andrew.den.exter@jollamobile.com> - 0.10.36
+- baseaudiosink: Resync when ringbuffer resets
+
 * Sat Jan 26 2013 Oleg Girko <ol+mer@infoserver.ru> - 0.10.36
 - Don't package v4l plugin which is not built with newer kernel-headers.
 
