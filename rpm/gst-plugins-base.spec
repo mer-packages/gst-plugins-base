@@ -28,6 +28,7 @@ BuildRequires:  pkgconfig(libvisual-0.4)
 BuildRequires:  gettext
 BuildRequires:  cvs
 BuildRequires:  python
+BuildRequires:  libtool
 
 %description
 A well-groomed and well-maintained collection of GStreamer plug-ins and elements, 
@@ -77,6 +78,12 @@ export NOCONFIGURE=1
     --disable-freetypetest \
     --disable-nls \
     --enable-orc \
+%if %{without X11}
+    --disable-x \
+    --disable-xvideo \
+    --disable-libvisual \
+    --disable-pango \
+%endif
 %ifarch %{ix86}
     --with-audioresample-format=float \
 %endif
